@@ -29,86 +29,86 @@ Console.WriteLine($"Сумма цифр = {GetSumNums(num3)}");
 // 456 -> 3
 // 78 -> 2
 // 89126 -> 5
-int FindLen(int a)
-{
-    int count = 0;
-    int temp = a;
-    while (temp > 0)
-    {
-        temp = temp / 10;
-        count++;
-    }
-    return count;
+// int FindLen(int a)
+// {
+//     int count = 0;
+//     int temp = a;
+//     while (temp > 0)
+//     {
+//         temp = temp / 10;
+//         count++;
+//     }
+//     return count;
 
-}
+// }
 
-System.Console.Write("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"Ответ: {FindLen(a)}");
-// Задача 28: Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
-// 4 -> 24 
-// 5 -> 120
-int Mult(int A)
-{
-    int result = 1;
-    for (int i = 1; i <= A; i++)
-    {
-        result = result * i;
-    }
-    return result;
+// System.Console.Write("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"Ответ: {FindLen(a)}");
+// // Задача 28: Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
+// // 4 -> 24 
+// // 5 -> 120
+// int Mult(int A)
+// {
+//     int result = 1;
+//     for (int i = 1; i <= A; i++)
+//     {
+//         result = result * i;
+//     }
+//     return result;
 
-}
-Console.Write("Введите число: ");
-int A = Convert.ToInt32(Console.ReadLine());
+// }
+// Console.Write("Введите число: ");
+// int A = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Сумма чисел равна:  {Mult(A)}");
+// Console.WriteLine($"Сумма чисел равна:  {Mult(A)}");
 
-// Задача 30: Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
-// [1,0,1,1,0,1,0,0]
-void FillArray(int[] array)
-{
-    int length = array.Length;
+// // Задача 30: Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+// // [1,0,1,1,0,1,0,0]
+// void FillArray(int[] array)
+// {
+//     int length = array.Length;
 
-    for (int index = 0; index < length; index++)
-    {
-        array[index] = new Random().Next(0, 2);
-    }
-}
+//     for (int index = 0; index < length; index++)
+//     {
+//         array[index] = new Random().Next(0, 2);
+//     }
+// }
 
-void PrintArray(int[] mas)
-{
-    int len = mas.Length;
-    for (int i = 0; i < len; i++)
-    {
-        Console.Write(mas[i] + " ");
-    }
-}
+// void PrintArray(int[] mas)
+// {
+//     int len = mas.Length;
+//     for (int i = 0; i < len; i++)
+//     {
+//         Console.Write(mas[i] + " ");
+//     }
+// }
 
-int[] arr = new int[8];
-FillArray(arr);
-PrintArray(arr);
+// int[] arr = new int[8];
+// FillArray(arr);
+// PrintArray(arr);
 
-void FillArray(int[] array)
-{
-    int length = array.Length;
+// void FillArray(int[] array)
+// {
+//     int length = array.Length;
 
-    for (int index = 0; index < length; index++)
-    {
-        array[index] = new Random().Next(0, 2);
-        Console.Write(array[index] + " ");
-    }
-}
+//     for (int index = 0; index < length; index++)
+//     {
+//         array[index] = new Random().Next(0, 2);
+//         Console.Write(array[index] + " ");
+//     }
+// }
 
-void PrintArray(int[] mas)
-{
-    int len = mas.Length;
-    for (int i = 0; i < len; i++)
-    {        
-        Console.Write(mas[i] + " ");
-    }
-}
+// void PrintArray(int[] mas)
+// {
+//     int len = mas.Length;
+//     for (int i = 0; i < len; i++)
+//     {        
+//         Console.Write(mas[i] + " ");
+//     }
+// }
 
-int[] arr = new int[8];
-FillArray(arr);
-Console.WriteLine();
-PrintArray(arr);
+// int[] arr = new int[8];
+// FillArray(arr);
+// Console.WriteLine();
+// PrintArray(arr);
